@@ -1,0 +1,22 @@
+<div class="creating-appointment">
+  <input  [(ngModel)]="newAppointmentTitle" type="text" placeholder="Appointment description">
+  <input [(ngModel)]="newAppointmentDate" type="date" placeholder="Appointment date">
+  <button (click)="addAppointment()">Add</button>
+</div>
+
+<ul class="all-appointments">
+  <li class="single-appointment-header">
+    <p>ID</p>
+    <p>Title</p>
+    <p>Date</p>
+    <p>Action</p>
+  </li>
+  <li *ngFor="let appointment of appointments; index as i" class="single-appointment">
+      <p>{{appointment.id}}</p>
+      <p>{{appointment.title}}</p>
+      <p>{{appointment.date | date:'dd.MM.yyyy'}}</p>
+      <div>
+        <button (click)="deletAppointment(i)">Delete</button>
+      </div>
+  </li>
+</ul>

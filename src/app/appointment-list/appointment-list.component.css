@@ -1,0 +1,86 @@
+.creating-appointment{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40%;
+  min-height: 10vh;
+  margin: auto;
+  margin-top: 80px;
+  gap: 40px;
+}
+
+
+.creating-appointment input{
+  width: 40%;
+  padding: 10px 8px;
+  height: 30px;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid rgb(45, 106, 185);
+  font-size: 16px;
+  color: gray;
+}
+
+
+.creating-appointment button{
+  width: 15%;
+  border-radius: 30px;
+  background-color: rgb(45, 106, 185);
+  border:none;
+  outline: none;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  transition: ease-in-out 500ms;
+}
+
+.creating-appointment button:hover{
+  background-color: rgb(110, 45, 185);
+}
+
+
+.all-appointments{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.single-appointment-header{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* text-align: center; */
+  justify-content: center;
+  background-color: rgb(45, 106, 185);
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 8px 8px;
+}
+
+.single-appointment{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 8px;
+  border-bottom: 1px solid rgb(110, 45, 185);
+}
+
+.single-appointment div button{
+  background-color: rgb(110, 45, 185);
+  color: white;
+  width: 80px;
+  border-radius: 12px;
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
